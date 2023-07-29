@@ -13,8 +13,8 @@ export const fetchPersons = createAsyncThunk(
   async function (_, { rejectWithValue }) {
     try {
       const response = await axios.get(
-        // "http://127.0.0.1:5000/records"
-        "https://api.github.com/users/GoykfisAlexander/repos"
+        "http://127.0.0.1:5000/records"
+        // "https://api.github.com/users/GoykfisAlexander/repos"
       );
       return response.data;
     } catch (e: unknown) {
